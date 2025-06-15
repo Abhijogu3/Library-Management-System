@@ -140,13 +140,13 @@ FROM Employees
 GROUP BY DepartmentID
 HAVING COUNT(*) > 5;
 
-
+---
 10. ORDER BY
 Sorts the result set.
 SELECT * FROM Employees
 ORDER BY LastName ASC;
 
-
+---
 11. EXISTS
 Checks for the existence of rows returned by a subquery.
 SELECT * FROM Employees E
@@ -155,7 +155,7 @@ WHERE EXISTS (
     WHERE D.DepartmentID = E.DepartmentID
 );
 
---
+---
 12. NOT EXISTS
 Checks for the non-existence of rows returned by a subquery.
 SELECT * FROM Employees E
