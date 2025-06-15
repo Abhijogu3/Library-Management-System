@@ -284,7 +284,7 @@ RETURN (
     WHERE DepartmentID = @DepartmentID
 );
 
---
+---
 28. OUTPUT CLAUSE
 Returns inserted or deleted rows.
 DECLARE @InsertedRows TABLE (EmployeeID INT, Name NVARCHAR(100));
@@ -328,7 +328,4 @@ FROM Employees;
 33. STUFF
 Deletes a specified length of characters and inserts another set of characters.
 SELECT STUFF('SQL Server', 5, 0, ' is awesome');
-
-CREATE CLUSTERED INDEX idx_EmployeeID
-ON Employees (EmployeeID);
 
